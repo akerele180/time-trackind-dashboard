@@ -33,7 +33,7 @@ main {
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
-  width: 992px;
+  max-width: 992px;
   padding: 0 5px;
 }
 .card {
@@ -174,15 +174,27 @@ p {
   }
 }
 @media screen and (max-width: 426px) {
+  body {
+    width: 100vw;
+  }
   main {
     display: block;
+    width: 100%;
+  }
+  .image-container img {
+    width: 60px;
   }
   .card {
-    margin: 50px 40px;
+    margin: 25px 5px;
   }
   .top-card {
     display: flex;
     align-items: center;
+    padding: 20px;
+  }
+  .lower-text {
+    display: flex;
+    justify-content: space-between;
   }
   .text-in-inmage-container {
     display: flex;
@@ -190,12 +202,14 @@ p {
     align-items: flex-start;
     justify-content: center;
     text-align: left;
+    font-size: 18px;
+    margin-left: 15px;
   }
   .text-in-inmage-container span {
     display: inline;
+    font-size: 1rem;
   }
-  .lower-text {
-    display: flex;
-    justify-content: space-around;
+  .text-in-inmage-container > div {
+    margin-top: 5px;
   }
 }
