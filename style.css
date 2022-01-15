@@ -180,7 +180,7 @@ p {
   main {
     display: block;
     width: 100%;
-    padding: 20px 0 30px;
+    padding: 20px 5vw 30px;
   }
   .image-container img {
     width: 60px;
