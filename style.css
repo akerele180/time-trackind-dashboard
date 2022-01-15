@@ -192,6 +192,14 @@ p {
     align-items: center;
     padding: 20px;
   }
+  .work,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .self-care {
+    height: 200px;
+  }
   .lower-text {
     display: flex;
     justify-content: space-between;
@@ -211,5 +219,18 @@ p {
   }
   .text-in-inmage-container > div {
     margin-top: 5px;
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .time p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 331px) {
+  .time h2 {
+    font-size: 1.6rem;
   }
 }
